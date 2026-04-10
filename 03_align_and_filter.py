@@ -21,8 +21,8 @@ if __name__ == '__main__':
     # 3. NEW: TOPIC SMOOTHING (Evidence Accumulation)
     # We use a 3-day window to 'densify' the news signal.
     # This prevents the HMM from collapsing when news is sparse.
-    print("Applying 3-day evidence smoothing...")
-    df_news_daily[topic_cols] = df_news_daily[topic_cols].rolling(window=3, min_periods=1).mean()
+    print("Applying 5-day evidence smoothing...")
+    df_news_daily[topic_cols] = df_news_daily[topic_cols].rolling(window=5, min_periods=1).mean()
 
     # 4. DOWNLOAD MARKET DATA
     print(f"Downloading {target_ticker} data ({start_date} to {end_date})...")

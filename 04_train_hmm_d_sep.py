@@ -14,8 +14,8 @@ if __name__ == '__main__':
     # Topic 0: Macro Labor & Policy (Weight 1.5)
     # Topic 8: General Sentiment (Weight 0.5)
     selected_topics = {
-        'Topic_0': 1.5,
-        'Topic_8': 0.5
+        'Topic_0': 1.5,  # Macro Labor
+        'Topic_8': 0.5  # General Sentiment
     }
 
     for topic, weight in selected_topics.items():
